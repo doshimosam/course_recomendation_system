@@ -39,9 +39,9 @@ const HomePage = () => {
       </div>
 
       {/* Button */}
-      <button className="button1" onClick={() => window.location.href = "/Questionnaire"}>
+      <Link to="/Questionnaire" className="button1">
         Let's begin
-      </button>
+      </Link>
     </div>
   );
 };
