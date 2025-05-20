@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +10,13 @@ function Questionnaire() {
   const [questions, setQuestions] = useState([]);
   const [responses, setResponses] = useState({});
   const navigate = useNavigate();
+
+//   useEffect(() => {
+//   axios.get("http://127.0.0.1:5000/questions").then((response) => {
+//     setQuestions(response.data);
+//   });
+// }, []);
+
 
   useEffect(() => {
     axios.get("https://course-recommendation-system-b1wi.onrender.com/questions").then((response) => {
