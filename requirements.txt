@@ -53,3 +53,4 @@ torch
 flask_cors
 requests
 gunicorn
+transformers
