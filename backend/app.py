@@ -156,7 +156,9 @@ courses = [
 ]
 
 # Load questionnaire
-questionnaire_df = pd.read_csv("questionnaire.csv")  # CSV format: 'Question', 'Option a', 'Option b', 'Option c', 'Option d'
+import os
+csv_path = os.path.join(os.path.dirname(__file__), 'questionnaire.csv')
+questionnaire_df = pd.read_csv(csv_path)  # CSV format: 'Question', 'Option a', 'Option b', 'Option c', 'Option d'
 
 @app.route('/questions', methods=['GET'])
 def get_questions():
